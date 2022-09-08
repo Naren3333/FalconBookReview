@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Falcon Book Reviews</title>
+<style>
+
+table {
+  width:50%;
+  margin: 1em auto;
+  border: solid;
+  border-radius:1em;
+  border-spacing:1em;
+}
+td {
+  width: 5%;
+  vertical-align:top;
+  text-align: left; 
+}
+#last {
+  width:100%;
+  text-align:right;
+}
+button {
+  margin:auto 1em;
+}
+.button {
+  background-color: Crimson;
+  border: none;
+  color: indianred;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.button1 {
+  float:centre;
+  background-color: darksalmon; 
+  color: maroon; 
+  border: 2px solid Crimson;
+  font-size: 20px;
+  border-radius : 10px;
+  font-family : 'Courier New', monospace;
+  font-weight : 900 ;
+}
+.button1:hover {
+  background-color: darkseagreen;
+  color: black;
+  font-size : 20px;
+}
+.button2 {
+  float:centre;
+  background-color: darksalmon; 
+  color: maroon; 
+  border: 2px solid Crimson;
+  font-size: 20px;
+  border-radius : 10px;
+  font-family : 'Courier New', monospace;
+  font-weight : 900 ;
+}
+.button2:hover {
+  background-color: tomato;
+  color: black;
+  font-size : 20px;
+}
+.bruh{
+margin: auto;
+align: center;
+justify-content : center;
+font-family : 'Courier New', monospace;
+font-size : 60px ;
+color : MediumAquaMarine ;
+display : flex;
+border : solid;
+border-color : mediumaquamarine;
+width : 75%;
+background-color : white;
+}
+</style>
+<h1><div class = "bruh">FALCON Book Reviews</div></h1>
+</head>
+<body style = "background-color : pink;">
+    <form style="font-family : 'Courier New', monospace; font-weight: 900; color:maroon;" action="/submit" method="post" enctype="multipart/form-data">
+        <table style = "background-color: powderblue; ">
+          <tr>
+            <td>
+              <label for="Name">Name of book:</label>
+            </td>
+              
+            <td>
+               <input  style="width: 75%" id="Name"  name="book_name" type="text"/>
+            </td>
+          </tr>
+		  <tr>
+            <td>
+               <label for ="Author">Author of Book:</label>
+            </td>
+            <td>
+               <input style="width: 75%" id = "Author" name="book_author" type="text"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Review">Review of book:</label>
+            </td>
+            <td>
+               <input style="width:100%" id="Review" name="book_review" type="text" size=50 width=50px/>  
+            </td>      
+          </tr>
+          <tr>
+            <td>
+               <label>Image Of Book(optional):</label>
+            </td>
+            <td>
+               <input  name="image_file" type="file"/>
+            </td>
+          </tr>
+		  <tr>
+            <td>
+               <label for="Reviewer">Your Name (optional):</label>
+            </td>
+            <td>
+               <input style="width: 75%" id ="Reviewer" name="reviewer_name" type="text"/>
+            </td>
+          </tr>
+          <tr>
+            <td  colspan="2" id="last">
+              <button class = "button1" type="submit">  Go  </button>
+              <a href="/"><button class = "button2">Cancel</button></a>
+			</td>
+          </tr>    
+        </table>
+      </form>
+      
+</body>
+</html>
